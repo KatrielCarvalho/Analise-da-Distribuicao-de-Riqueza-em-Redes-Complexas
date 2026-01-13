@@ -1,0 +1,11 @@
+# Virtual Enviroment
+**/.venv/
+
+# Python
+**/__pycache__/
+
+# Tests
+**/test.py
+
+# Addresses of folders
+**/addresses.py
