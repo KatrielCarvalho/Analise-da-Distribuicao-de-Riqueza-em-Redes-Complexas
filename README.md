@@ -8,20 +8,20 @@
 
 ## Python Setup 
 
-### Clone o repositório
+### 1) Clone o repositório
 
 ```bash
 git clone git@github.com:KatrielCarvalho/Analise-da-Distribuicao-de-Riqueza-em-Redes-Complexas.git
 cd Analise-da-Distribuicao-de-Riqueza-em-Redes-Complexas
 ```
 
-### Crie um Virtual Enviroment
+### 2) Crie um Virtual Enviroment
 
 ```bash
 python3 -m venv venv
 ```
 
-### Ative o Venv
+### 3) Ative o Venv
 
 **Linux/Mac:**
 ```bash
@@ -33,13 +33,13 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-### Instale as dependências
+### 4) Instale as dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Endereços
+### 5) Endereços
 
 Deve-se criar um arquivo chamado **addresses.py** com as seguintes variáveis:
 ```
