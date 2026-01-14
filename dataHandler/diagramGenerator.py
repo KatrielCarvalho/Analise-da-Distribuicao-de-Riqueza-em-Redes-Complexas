@@ -2,7 +2,7 @@
 
 #--> Bibliotecas
 #-> Minhas
-from CSVmodifier import existingFile, abreArquivoCSV
+from CSVmodifier import *
 from addresses import *
 
 #-> Para o csv
@@ -393,7 +393,7 @@ def lorenzIndividualGraph(
 # Serve para criar os gráficos de Probability x Quantity de Riqueza
 def wealthGraph(
         networkAddress : str, whereToSave : str, networkName : str, type : str, table : str, # LOCALIZAÇÃO
-        gauss : bool = True, zoomOrNo : bool = False, initialSate :bool = False # DEFINIÇÃO
+        gauss : bool = True, zoomOrNo : bool = False, initialState :bool = False # DEFINIÇÃO
     ) -> None:  
 
 
@@ -404,14 +404,14 @@ def wealthGraph(
     # Abre a tabela que vai ser usada para geração do gráfico e ordena em ordem crescente de Riqueza
     df = pd.read_csv(f"{dataAddress}{networkAddress}/{table}.csv")
     df = df.sort_values(by = "din")
-    if initialSate:
+    if initialState:
         filt = df[df['din'] < 10]
     else:
         filt = df[df['din'] < 1]
 
     percentualZero = round(filt['quant'].sum()/sum(df['quant']), 2)
 
-    if initialSate: 
+    if initialState: 
         df = df[10:]
     else:
         df = df[1::]

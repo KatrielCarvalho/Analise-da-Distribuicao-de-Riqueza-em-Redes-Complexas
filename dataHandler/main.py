@@ -99,6 +99,8 @@ def byTimeGraficos():
 
     
 if __name__ == '__main__':
+
+    # PARA USAR BASTA RETIRAR O "#"
     
     """####-------------------<          SETUPS            >-------------------####""" 
 
@@ -106,8 +108,10 @@ if __name__ == '__main__':
     #cleanerOfAll()
     #mixer(True)
     #byTimeSetup()
+
     
     """####-------------------<    GERADORES DE GRÁFICO    >-------------------####""" 
+
     #--> Gráficos Básicos
     #wealthGraphGenerator(initialState=False)
     #fitGraphGenerator(0.1, False) 
