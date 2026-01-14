@@ -1,24 +1,24 @@
-# Gráficos
+# Diagrams
 matplotlib>=3.10.7
 seaborn>=0.13.2
 
 # CSV
 pandas>=2.3.3
 
-# Calculos
+# Calc
 numpy>=2.3.4
 numpy-typing-compat>=20250818.2.3
 
-# Calculo dos gráficos
+# Calc of diagrams
 scipy>=1.16.2
 scipy-stubs>=1.16.2.4
 scikit-learn>=1.7.0
 
-# Utilidades 
+# Utility 
 python-dateutil>=2.9.0.post0
 pytz>=2025.2
 
-# Outros
+# Others
 pillow>=12.0.0
 pyparsing>=3.2.5
 optype>=0.14.0
